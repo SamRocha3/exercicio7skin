@@ -18,15 +18,7 @@ class Circle extends Shape{
         return $area;
     }
     
-    public function Prop_Objeto($objeto){
-        //$newobj = new Circle(null, null, $objeto->name, $objeto->radius);
-        $newobj = new Circle();
-        $newobj->name   = $objeto->name;
-        $newobj->radius = $objeto->radius;
-        $newobj->id  = uniqid('C'); 
-        
-        echo "Nome: {$newobj->name} <br>
-        radius: {$newobj->radius} <br>
-        Id: {$newobj->id} <br>";
+    public function Prop_Objeto(){
+        return new ShapeDTO($this->name, $this->radius, $this->id);
     }
 }
