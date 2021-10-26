@@ -30,17 +30,7 @@ class Shape {
         return $area;
     }
 
-    public function Prop_Objeto($objeto){
-        //$newobj = new Shape($objeto->length, $objeto->width, $objeto->name);
-        $newobj = new Shape();
-        $newobj->name   = $objeto->name;
-        $newobj->length = $objeto->length;
-        $newobj->width  = $objeto->width;
-        $newobj->id     = uniqid('S');
-        
-        echo "Nome: {$newobj->name} <br>
-        length: {$newobj->length} <br>
-        width: {$newobj->width} <br>
-        Id: {$newobj->id} <br>";
+    public function Prop_Objeto(){
+        return new ShapeDTO($this->length, $this->width, $this->name, $this->id);
     }
 }
