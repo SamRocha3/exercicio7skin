@@ -1,5 +1,6 @@
 <?php
 require_once 'Shape.php';
+include 'CircleDTO.php';
 
 class Circle extends Shape{
 
@@ -19,6 +20,6 @@ class Circle extends Shape{
     }
     
     public function Prop_Objeto(){
-        return new ShapeDTO($this->name, $this->radius, $this->id);
+        return new CircleDTO($this->name, $this->radius, $this->id);
     }
 }
