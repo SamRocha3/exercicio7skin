@@ -1,5 +1,5 @@
 <?php
-require Shape.php;
+require_once 'Shape.php';
 
 class Rectangle extends Shape{
 
@@ -7,5 +7,10 @@ class Rectangle extends Shape{
 
     function __construct($length, $width){
         parent::__construct($length, $width);
+    }
+
+    public function Calcular_RectangleArea($length, $width){
+        $rectangleArea = $length*$width;
+        return parent::Calcular_Area($rectangleArea);
     }
 }

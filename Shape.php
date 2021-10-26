@@ -24,7 +24,7 @@ class Shape {
         $this->id = $id;
     }
 
-    public function Calcular_Area($value){
+    public function Calcular_Area($length, $width){
         $area = "A área do Objeto é ". $value;
         return $area;
     }
