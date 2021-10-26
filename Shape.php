@@ -1,5 +1,5 @@
 <?php
-
+include 'ShapeDTO.php';
 class Shape {
 
     public      $name;
