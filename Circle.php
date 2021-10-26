@@ -12,12 +12,13 @@ class Circle extends Shape{
         $this->radius = $radius;
     }
     
-    public function Calcular_AreaCircular($radius){
-        $circleArea = pi()*($radius * $radius);
-        return parent::Calcular_Area($circleArea);
+    public function Calcular_Area($radius){
+        $value = pi()*($radius * $radius);
+        $area = "A área do Objeto é ". $value;
+        return $area;
     }
     
-    public function PropObjeto($objeto){
+    public function Prop_Objeto($objeto){
         //$newobj = new Circle(null, null, $objeto->name, $objeto->radius);
         $newobj = new Circle();
         $newobj->name   = $objeto->name;

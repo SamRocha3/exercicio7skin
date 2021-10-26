@@ -25,11 +25,12 @@ class Shape {
     }
 
     public function Calcular_Area($length, $width){
+        $value = $length*$width;
         $area = "A área do Objeto é ". $value;
         return $area;
     }
 
-    public function PropObjeto($objeto){
+    public function Prop_Objeto($objeto){
         //$newobj = new Shape($objeto->length, $objeto->width, $objeto->name);
         $newobj = new Shape();
         $newobj->name   = $objeto->name;
